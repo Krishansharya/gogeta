@@ -1,0 +1,176 @@
+
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #121212;
+    color: #E0E0E0;
+    margin: 0;
+}
+
+header {
+    width: 100%;
+    background: #1F1F1F;
+    color: #E0E0E0;
+    padding: 1em 0;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo {
+    font-size: 24px;
+    font-weight: bold;
+    margin-left: 20px;
+}
+
+.tabs {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.tab {
+    padding: 0.5em 1em;
+    cursor: pointer;
+    transition: background 0.3s;
+    color: #E0E0E0;
+    background: #2C2C2C;
+    margin: 0 10px;
+    border-radius: 5px;
+}
+
+.tab:hover,
+.tab.active {
+    background: #444;
+}
+
+.search-bar {
+    margin-right: 20px;
+    padding: 0 1em;
+}
+
+.search-bar input {
+    width: 300px;
+    padding: 0.5em;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    background: #333;
+    color: #E0E0E0;
+}
+
+.container {
+    background: #1F1F1F;
+    padding: 2em;
+    border-radius: 15px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+    width: 80%;
+    max-width: 1200px;
+    margin: 2em auto;
+}
+
+.input-section {
+    margin-bottom: 2em;
+    text-align: center;
+}
+
+textarea {
+    width: 100%;
+    height: 100px;
+    margin-bottom: 1em;
+    padding: 1em;
+    border: 1px solid #333;
+    border-radius: 10px;
+    font-size: 16px;
+    background: #2C2C2C;
+    color: #E0E0E0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+button {
+    background: #444;
+    color: #E0E0E0;
+    border: none;
+    padding: 0.75em 1.5em;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background 0.3s ease;
+}
+
+button:hover {
+    background: #666;
+}
+
+#result {
+    margin-top: 1em;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.messages-section {
+    display: flex;
+    justify-content: space-between;
+    gap: 2em;
+}
+
+.messages-column {
+    flex: 1;
+    margin: 0;
+    display: none; /* Hide by default */
+}
+
+.messages-column.active {
+    display: block; /* Display when active */
+}
+
+.messages {
+    background: #2C2C2C;
+    padding: 1em;
+    border: 1px solid #333;
+    border-radius: 10px;
+    height: 400px;
+    overflow-y: auto;
+    box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.messages-column h2 {
+    margin-bottom: 1em;
+    font-size: 20px;
+    color: #E0E0E0;
+}
+
+.message {
+    background: #1F1F1F;
+    padding: 0.75em;
+    margin-bottom: 0.5em;
+    border-radius: 5px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.message-buttons {
+    display: flex;
+    gap: 0.5em;
+}
+
+.message-buttons button {
+    background: #888;
+    color: #E0E0E0;
+    border: none;
+    padding: 0.25em 0.5em;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.message-buttons button:hover {
+    background: #666;
+}
